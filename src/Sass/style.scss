@@ -6,7 +6,9 @@
     outline: 0;
 }
 
-@import "./partials/styles/colors";@import "./partials/components/header";
+@import "./partials/styles/colors";
+@import "./partials/components/header";
+@import "./partials/components/layout";
 
 body{
     font-family: 'Sora', sans-serif;
@@ -25,10 +27,6 @@ svg{
 }
 
 img{
-    width: 100%;
-}
-
-svg{
     width: 100%;
 }
 
