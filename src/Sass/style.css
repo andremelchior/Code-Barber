@@ -12,6 +12,27 @@
   justify-content: space-between;
 }
 
+i {
+  color: #FFFFFF;
+}
+
+.header-icons {
+  display: flex;
+  gap: 14px;
+}
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #D34040;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   height: 100vh;
