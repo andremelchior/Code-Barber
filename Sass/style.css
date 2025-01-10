@@ -1,0 +1,16 @@
+* {
+  /*reset*/
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  height: 100vh;
+  position: relative;
+  background-color: #06121E;
+}
+/*# sourceMappingURL=style.css.map */
