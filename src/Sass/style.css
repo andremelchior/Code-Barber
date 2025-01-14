@@ -61,9 +61,6 @@ i {
   background-color: transparent;
   transition: background-color 0.7s;
 }
-#header-button a {
-  color: #FFFFFF;
-}
 #header-button:hover {
   border: 1px solid #D34040;
   background-color: #D34040;
@@ -95,6 +92,34 @@ i {
   height: 100%;
   z-index: -1;
   opacity: 0.9;
+}
+
+.main {
+  color: #FFFFFF;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+.main h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 45px;
+}
+.main p {
+  text-align: center;
+  margin: 14px 0;
+}
+.main .button-contact {
+  padding: 14px 20px;
+  color: #FFFFFF;
+  background-color: #D94140;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
 }
 
 body {

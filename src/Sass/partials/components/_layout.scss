@@ -19,3 +19,33 @@
         opacity: 0.9;
     }
 }
+
+.main{
+    color: $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 45px;
+
+    }
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+    .button-contact{
+        padding: 14px 20px;
+        color: $white-normal;
+        background-color: $red-normal;
+        font-weight: 600;
+        border: 0;
+        font-size: 18px;
+    }
+}
