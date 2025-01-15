@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 12px;
@@ -6,14 +6,15 @@
 
 //home background
 
-.bg-home{
+.bg-home {
     position: relative;
 
-    &::before{
-        content: '';
+    &::before {
+        content: "";
         display: block;
         position: absolute;
-        background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../Assets/bg.svg") no-repeat 50% 0/cover;
+        background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+            url("../Assets/bg.svg") no-repeat 50% 0 / cover;
         left: 0;
         top: 0;
         width: 100%;
@@ -25,7 +26,7 @@
 
 //main content
 
-.main{
+.main {
     color: $white-normal;
     min-height: 80vh;
     display: flex;
@@ -34,18 +35,17 @@
     justify-content: center;
     padding: 14px;
 
-    h1{
+    h1 {
         text-align: center;
         line-height: 150%;
         max-width: 940px;
         font-size: 45px;
-
     }
-    p{
+    p {
         text-align: center;
         margin: 14px 0;
     }
-    .button-contact{
+    .button-contact {
         padding: 14px 20px;
         color: $white-normal;
         background-color: $red-normal;
@@ -56,18 +56,17 @@
         transition: animation 0.2s;
         transition: box-shadow 0.8s;
 
-
-        &:hover{
+        &:hover {
             animation: scaleButton 0.8s alternate infinite;
             box-shadow: 0 0 10px 0 $red-normal;
         }
     }
 
     @keyframes scaleButton {
-        from{
+        from {
             transform: scale(1);
         }
-        to{
+        to {
             transform: scale(1.07);
         }
     }
@@ -75,78 +74,78 @@
 
 //breakpoints
 
-@media screen and (max-width: 768px){
-    .main{
+@media screen and (max-width: 768px) {
+    .main {
         min-height: 60vh;
 
-        h1{
+        h1 {
             font-size: 38px;
             padding: 0 14px;
             width: 100%;
         }
 
-        p{
+        p {
             font-size: 14px;
         }
     }
 }
 
-@media screen and (max-width: 480px){
-    .main h1{
+@media screen and (max-width: 480px) {
+    .main h1 {
         font-size: 24px;
     }
 }
 
 //about
 
-.about{
+.about {
     background-color: $primary-normal;
     overflow: hidden;
     color: $white-normal;
 }
 
-.about-content{
+.about-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
     padding: 34px 14px 64px 14px;
 
-    img{
+    img {
         max-width: 570px;
         transition: filter 0.6s;
 
-        &:hover{
+        &:hover {
             filter: grayscale(100);
         }
     }
 
-    div{
+    div {
         flex: 1;
     }
 }
 
-.about-description{
-    h2{
+.about-description {
+    h2 {
         font-size: 38px;
         margin-bottom: 24px;
     }
-    
-    p{
+
+    p {
         margin-bottom: 14px;
         line-height: 150%;
     }
 }
 
-@media screen and (max-width: 768px){
-    .about-content{
+@media screen and (max-width: 768px) {
+    .about-content {
         flex-direction: column;
     }
 }
 
 //services
 
-.services{
+.services {
     background-color: $white-normal;
     color: $black-normal;
     display: flex;
@@ -155,30 +154,70 @@
     align-items: center;
     padding: 54px 14px;
 
-    .services-content{
-        h2{
+    .services-content {
+        h2 {
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 14px;
             font-size: 38px;
         }
-        p{
+        
+        p {
             text-align: center;
             max-width: 780px;
             line-height: 150%;
-            margin-bottom: 14px;
+            margin-bottom: 20px;
         }
     }
 
-    .haircuts{
+    .haircuts {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 16px;
         padding: 0 44px 34px 44px;
 
-        .haircut{
+        .haircut {
+            display: flex;
+            flex-direction: column;
+            background-color: $white-normal;
             flex: 1;
+            border-radius: 8px;
+            box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+            overflow: hidden; /*o que estiver fora será escondido, ou seja, a imagem fica arredondada*/
+
+            img{
+                width: 100%;
+                max-width: 354px;
+                transition: transform 0.2s;
+
+                &:hover{
+                    transform: scale(1.2);
+                    z-index: 1;
+                }
+            }
+
+            .haircut-info{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 14px;
+                background-color: $white-normal;
+                z-index: 2;
+
+                button{
+                    color: $white-normal;
+                    background-color: $red-normal;
+                    padding: 14px 8px;
+                    border-radius: 4px;
+                    border: 0;
+                    cursor: default;
+                }
+            }
+        }
+
+        @media screen and (max-width: 760px){
+            flex-direction: column;
         }
     }
 }

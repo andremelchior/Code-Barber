@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   /*reset*/
   padding: 0;
@@ -213,7 +214,7 @@ i {
   text-align: center;
   max-width: 780px;
   line-height: 150%;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 .services .haircuts {
   display: flex;
@@ -223,7 +224,43 @@ i {
   padding: 0 44px 34px 44px;
 }
 .services .haircuts .haircut {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
   flex: 1;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  overflow: hidden; /*o que estiver fora será escondido, ou seja, a imagem fica arredondada*/
+}
+.services .haircuts .haircut img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.2s;
+}
+.services .haircuts .haircut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+.services .haircuts .haircut .haircut-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+.services .haircuts .haircut .haircut-info button {
+  color: #FFFFFF;
+  background-color: #D94140;
+  padding: 14px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: default;
+}
+@media screen and (max-width: 760px) {
+  .services .haircuts {
+    flex-direction: column;
+  }
 }
 
 body {
