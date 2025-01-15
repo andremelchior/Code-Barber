@@ -76,6 +76,7 @@ i {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 .bg-home {
@@ -137,6 +138,24 @@ i {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main {
+    min-height: 60vh;
+  }
+  .main h1 {
+    font-size: 38px;
+    padding: 0 14px;
+    width: 100%;
+  }
+  .main p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main h1 {
+    font-size: 24px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   height: 100vh;
