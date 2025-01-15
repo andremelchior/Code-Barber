@@ -47,5 +47,23 @@
         font-weight: 600;
         border: 0;
         font-size: 18px;
+        margin: 14px 0;
+        transition: animation 0.2s;
+        transition: box-shadow 0.8s;
+
+
+        &:hover{
+            animation: scaleButton 0.8s alternate infinite;
+            box-shadow: 0 0 10px 0 $red-normal;
+        }
+    }
+
+    @keyframes scaleButton {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.07);
+        }
     }
 }
