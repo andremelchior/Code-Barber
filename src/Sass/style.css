@@ -156,6 +156,44 @@ i {
     font-size: 24px;
   }
 }
+.about {
+  background-color: #06121E;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+}
+.about-content img {
+  max-width: 570px;
+  transition: filter 0.6s;
+}
+.about-content img:hover {
+  filter: grayscale(100);
+}
+.about-content div {
+  flex: 1;
+}
+
+.about-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.about-description p {
+  margin-bottom: 14px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   height: 100vh;

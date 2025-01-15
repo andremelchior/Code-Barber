@@ -96,3 +96,50 @@
         font-size: 24px;
     }
 }
+
+//about
+
+.about{
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 570px;
+        transition: filter 0.6s;
+
+        &:hover{
+            filter: grayscale(100);
+        }
+    }
+
+    div{
+        flex: 1;
+    }
+}
+
+.about-description{
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-content{
+        flex-direction: column;
+    }
+}
