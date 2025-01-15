@@ -194,6 +194,38 @@ i {
     flex-direction: column;
   }
 }
+.services {
+  background-color: #FFFFFF;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 54px 14px;
+}
+.services .services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 14px;
+  font-size: 38px;
+}
+.services .services-content p {
+  text-align: center;
+  max-width: 780px;
+  line-height: 150%;
+  margin-bottom: 14px;
+}
+.services .haircuts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+.services .haircuts .haircut {
+  flex: 1;
+}
+
 body {
   font-family: "Sora", sans-serif;
   height: 100vh;
