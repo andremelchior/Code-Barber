@@ -278,16 +278,36 @@ i {
   gap: 10px;
 }
 
-.btn-wpp img {
-  max-width: 74px;
+.btn-wpp {
   position: fixed;
   bottom: 15px;
   right: 25px;
   z-index: 99;
+}
+.btn-wpp img {
+  max-width: 74px;
   transition: transform 0.3s;
 }
 .btn-wpp img:hover {
   transform: scale(1.1);
+}
+.btn-wpp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 7px;
+  right: 100px;
+  background-color: #232224;
+  color: #FFFFFF;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.btn-wpp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 body {

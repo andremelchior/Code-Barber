@@ -243,16 +243,37 @@
 // botão
 
 .btn-wpp{
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    z-index: 99;
+
     img{
         max-width: 74px;
-        position: fixed;
-        bottom: 15px;
-        right: 25px;
-        z-index: 99;
         transition: transform 0.3s;
 
         &:hover{
             transform: scale(1.1);
         }
+    }
+
+    .tooltip-text{
+        visibility: hidden;
+        position: absolute;
+        width: 120px;
+        top: 7px;
+        right: 100px;
+        background-color: $black-normal;
+        color: $white-normal;
+        padding: 6px;
+        border-radius: 8px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    &:hover .tooltip-text{
+        visibility: visible;
+        opacity: 1;
     }
 }
