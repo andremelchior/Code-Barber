@@ -239,3 +239,20 @@
         gap: 10px;
     }
 }
+
+// botão
+
+.btn-wpp{
+    img{
+        max-width: 74px;
+        position: fixed;
+        bottom: 15px;
+        right: 25px;
+        z-index: 99;
+        transition: transform 0.3s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

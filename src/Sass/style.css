@@ -278,6 +278,18 @@ i {
   gap: 10px;
 }
 
+.btn-wpp img {
+  max-width: 74px;
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  z-index: 99;
+  transition: transform 0.3s;
+}
+.btn-wpp img:hover {
+  transform: scale(1.1);
+}
+
 body {
   font-family: "Sora", sans-serif;
   height: 100vh;
