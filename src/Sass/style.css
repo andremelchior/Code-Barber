@@ -310,6 +310,11 @@ i {
   opacity: 1;
 }
 
+@media screen and (max-width: 760px) {
+  .btn-wpp img {
+    max-width: 60px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   height: 100vh;
