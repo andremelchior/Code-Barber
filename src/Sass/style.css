@@ -190,14 +190,18 @@ i {
   line-height: 150%;
 }
 
+.about-description p {
+  transition: text-shadow 0.8s;
+}
 .about-description p:hover {
   text-shadow: 0 0 14px #e0115f;
-  transition: text-shadow 0.5s;
 }
 
+.about-description h2 {
+  transition: text-shadow 0.8s;
+}
 .about-description h2:hover {
   text-shadow: 0 0 14px #e0115f;
-  transition: text-shadow 0.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -213,12 +217,23 @@ i {
   justify-content: center;
   align-items: center;
   padding: 54px 14px;
+  transition: text-shadow 1s;
+}
+.services h2 {
+  transition: text-shadow 1s;
+}
+.services h2:hover {
+  text-shadow: 0 0 19px palevioletred;
 }
 .services .services-content h2 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 14px;
   font-size: 38px;
+  transition: text-shadow 1s;
+}
+.services .services-content h2:hover {
+  text-shadow: 0 0 19px palevioletred;
 }
 .services .services-content p {
   text-align: center;
