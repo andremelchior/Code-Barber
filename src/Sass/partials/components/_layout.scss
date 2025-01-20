@@ -1,7 +1,7 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 10px 12px 0px;
 }
 
 //home background
@@ -125,6 +125,7 @@
     }
 }
 
+
 .about-description {
     h2 {
         font-size: 38px;
@@ -135,6 +136,16 @@
         margin-bottom: 14px;
         line-height: 150%;
     }
+}
+
+.about-description p:hover{
+    text-shadow: 0 0 14px #e0115f;
+    transition: text-shadow 0.5s;
+}
+
+.about-description h2:hover{
+    text-shadow: 0 0 14px #e0115f;
+    transition: text-shadow 0.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -257,6 +268,16 @@
             }
         }
     }
+}
+
+#logo{
+    transform: translateY(0) scale(1);
+    transition: transform 0.3s;
+}
+
+#logo:hover{
+    transition: transform 0.2s;
+    transform: translateY(0) scale(1.1);
 }
 
 // botão

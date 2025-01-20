@@ -77,7 +77,7 @@ i {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 10px 12px 0px;
 }
 
 .bg-home {
@@ -190,6 +190,16 @@ i {
   line-height: 150%;
 }
 
+.about-description p:hover {
+  text-shadow: 0 0 14px #e0115f;
+  transition: text-shadow 0.5s;
+}
+
+.about-description h2:hover {
+  text-shadow: 0 0 14px #e0115f;
+  transition: text-shadow 0.5s;
+}
+
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -293,6 +303,16 @@ i {
   animation: translateY 0.8s infinite alternate;
   color: #D34040;
   text-shadow: 0 0 13px #e0115f;
+}
+
+#logo {
+  transform: translateY(0) scale(1);
+  transition: transform 0.3s;
+}
+
+#logo:hover {
+  transition: transform 0.2s;
+  transform: translateY(0) scale(1.1);
 }
 
 .btn-wpp {
