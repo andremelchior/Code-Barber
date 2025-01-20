@@ -14,6 +14,11 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -25,6 +30,8 @@
             content="Code Barber é uma barbearia que oferece um atendimento preciso e personalizado, com cortes de cabelo e modelagem de barba feitos para realçar o estilo único de cada cliente, onde proporcionamos uma experiência para que você Debugue o estilo e Compile sua confiança."
         />
         <meta name="author" content="André Melchior" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <title>Home - Code Barber</title>
         <link rel="stylesheet" href="./src/Sass/style.css" />
     </head>
@@ -32,7 +39,7 @@
         <div class="bg-home">
             <header>
                 <nav class="header-content container">
-                    <div class="header-icons">
+                    <div class="header-icons" data-aos="fade-down">
                         <a href="#">
                             <i class="fa-brands fa-instagram fa-2x"></i>
                         </a>
@@ -46,18 +53,25 @@
                         </a>
                     </div>
 
-                    <div class="header-logo">
-                        <img src="./src/Assets/logo.svg" alt="" />
+                    <div class="header-logo" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./src/Assets/logo.svg" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1300" alt="logotipo da code barber escrito 'barber', de cor branca contendo ferramentas da profissão como navalha e pincel de barbear." />
                     </div>
 
-                    <div>
-                        <a id="header-button" href="https://api.whatsapp.com/send?phone=551190000000009&text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio!">Agendar horário</a>
+                    <div data-aos="fade-down">
+                        <a
+                            id="header-button"
+                            href="https://api.whatsapp.com/send?phone=551190000000009&text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio!"
+                            >Agendar horário</a
+                        >
                     </div>
                 </nav>
-                <main class="main container">
+                <main class="main container" class="header-logo" data-aos="fade-up" data-aos-delay="300">
                     <h1>DEBUGUE O ESTILO E COMPILE SUA CONFIANÇA.</h1>
                     <p>Horário de funcionamento: 08:30 as 20:00</p>
-                    <a href="https://api.whatsapp.com/send?phone=551190000000009&text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio!" class="button-contact" target="_blank"
+                    <a
+                        href="https://api.whatsapp.com/send?phone=551190000000009&text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio!"
+                        class="button-contact"
+                        target="_blank"
                         >Agendar Horário</a
                     >
                 </main>
@@ -159,12 +173,17 @@
                 reservados.
             </p>
         </footer>
-        <a href="https://api.whatsapp.com/send?phone=551190000000009&text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio!" class="btn-wpp" target="_blank">
+        <a
+            href="https://api.whatsapp.com/send?phone=551190000000009&text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio!"
+            class="btn-wpp"
+            target="_blank"
+        >
             <img
                 src="./src/Assets/whatsapp.svg"
                 alt="botão que redireciona para um link para iniciar uma conversa no whatsapp da Code Barber, contém a logotipo oficial do whatsapp que é uma imagem arredondada que tem a cor verde e o simbolo de telefone de cor branca centralizado."
             />
             <span class="tooltip-text">Agende o seu horário</span>
         </a>
+        <script src="src/JS/script.js"></script>
     </body>
 </html>
